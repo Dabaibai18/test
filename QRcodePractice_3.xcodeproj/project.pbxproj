@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		EC0871C221AD1141001563AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0871C121AD1141001563AF /* AppDelegate.swift */; };
-		EC0871C421AD1141001563AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0871C321AD1141001563AF /* ViewController.swift */; };
 		EC0871C721AD1141001563AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0871C521AD1141001563AF /* Main.storyboard */; };
 		EC0871C921AD1142001563AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0871C821AD1142001563AF /* Assets.xcassets */; };
 		EC0871CC21AD1142001563AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0871CA21AD1142001563AF /* LaunchScreen.storyboard */; };
+		ECFFA26221AD1B6700858740 /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFFA26121AD1B6700858740 /* QRScannerController.swift */; };
+		ECFFA26421AD212500858740 /* ScanResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFFA26321AD212500858740 /* ScanResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC0871BE21AD1141001563AF /* QRcodePractice_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRcodePractice_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0871C121AD1141001563AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC0871C321AD1141001563AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC0871C621AD1141001563AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC0871C821AD1142001563AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC0871CB21AD1142001563AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC0871CD21AD1142001563AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECFFA26121AD1B6700858740 /* QRScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
+		ECFFA26321AD212500858740 /* ScanResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,8 @@
 		EC0871B521AD1141001563AF = {
 			isa = PBXGroup;
 			children = (
+				ECFFA25E21AD1A4300858740 /* Model */,
+				EC0871D421AD1190001563AF /* Supporting File */,
 				EC0871C021AD1141001563AF /* QRcodePractice_3 */,
 				EC0871BF21AD1141001563AF /* Products */,
 			);
@@ -54,14 +58,29 @@
 		EC0871C021AD1141001563AF /* QRcodePractice_3 */ = {
 			isa = PBXGroup;
 			children = (
-				EC0871C121AD1141001563AF /* AppDelegate.swift */,
-				EC0871C321AD1141001563AF /* ViewController.swift */,
 				EC0871C521AD1141001563AF /* Main.storyboard */,
-				EC0871C821AD1142001563AF /* Assets.xcassets */,
-				EC0871CA21AD1142001563AF /* LaunchScreen.storyboard */,
+				ECFFA26121AD1B6700858740 /* QRScannerController.swift */,
 				EC0871CD21AD1142001563AF /* Info.plist */,
+				ECFFA26321AD212500858740 /* ScanResultViewController.swift */,
 			);
 			path = QRcodePractice_3;
+			sourceTree = "<group>";
+		};
+		EC0871D421AD1190001563AF /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				EC0871C121AD1141001563AF /* AppDelegate.swift */,
+				EC0871CA21AD1142001563AF /* LaunchScreen.storyboard */,
+				EC0871C821AD1142001563AF /* Assets.xcassets */,
+			);
+			path = "Supporting File";
+			sourceTree = "<group>";
+		};
+		ECFFA25E21AD1A4300858740 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC0871C421AD1141001563AF /* ViewController.swift in Sources */,
+				ECFFA26421AD212500858740 /* ScanResultViewController.swift in Sources */,
 				EC0871C221AD1141001563AF /* AppDelegate.swift in Sources */,
+				ECFFA26221AD1B6700858740 /* QRScannerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
