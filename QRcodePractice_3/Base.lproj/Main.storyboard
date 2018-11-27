@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDU-gp-rG6">
-                                <rect key="frame" x="0.0" y="74" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="30" width="375" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan QR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mL3-0M-SBL">
                                         <rect key="frame" x="149.5" y="60" width="76" height="24"/>
@@ -88,7 +88,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3O-WQ-Wad">
-                                <rect key="frame" x="0.0" y="74" width="375" height="49"/>
+                                <rect key="frame" x="0.0" y="30" width="375" height="49"/>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <tabBarItem title="Description" id="WtC-Ib-vzC">
@@ -106,7 +106,7 @@
                                 <color key="selectedImageTintColor" red="0.93333333330000001" green="0.2274509804" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tabBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJH-z7-bCG">
-                                <rect key="frame" x="0.0" y="128" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last updated on " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOd-bK-Lp3">
                                         <rect key="frame" x="20" y="10" width="116" height="18"/>
@@ -214,7 +214,7 @@ Sites near you</string>
                                                 <rect key="frame" x="20" y="77" width="333" height="230"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -289,7 +289,7 @@ Sites near you</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPo-Pf-jkY">
-                                <rect key="frame" x="0.0" y="74" width="375" height="593"/>
+                                <rect key="frame" x="0.0" y="30" width="375" height="637"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zre-JC-HPq">
                                         <rect key="frame" x="20" y="10" width="335" height="57.5"/>
@@ -311,6 +311,9 @@ notice of privacy policy.</string>
                                         <rect key="frame" x="153" y="133" width="69" height="28"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <state key="normal" title="Learn more"/>
+                                        <connections>
+                                            <segue destination="9jb-cg-32o" kind="showDetail" id="jbk-E2-HBH"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33z-U6-W2s">
                                         <rect key="frame" x="20" y="171" width="335" height="2"/>
@@ -322,8 +325,8 @@ notice of privacy policy.</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Eg-dr-YIo">
-                                        <rect key="frame" x="20" y="314" width="335" height="2"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Eg-dr-YIo">
+                                        <rect key="frame" x="20" y="265" width="335" height="2"/>
                                         <color key="backgroundColor" red="0.75686274509999996" green="0.75686274509999996" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="0Ku-C1-kCI"/>
@@ -332,10 +335,22 @@ notice of privacy policy.</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cs1-aj-pck">
-                                        <rect key="frame" x="20" y="181" width="335" height="119"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cs1-aj-pck">
+                                        <rect key="frame" x="20" y="183" width="335" height="72"/>
+                                        <string key="text">Click next to confirm you have reviewed, understand, and accept the terms and conditions and key in the 6 alphanumeric of you NRICS</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identify Comfirmation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae5-7q-S74">
+                                        <rect key="frame" x="20" y="277" width="335" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your  6 alphanumeric  NRICS/FIN to confirm your identify" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRq-bI-xC5">
+                                        <rect key="frame" x="20" y="321" width="335" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -345,25 +360,54 @@ notice of privacy policy.</string>
                                     <constraint firstItem="zre-JC-HPq" firstAttribute="top" secondItem="tPo-Pf-jkY" secondAttribute="top" constant="10" id="4kB-1G-gRz"/>
                                     <constraint firstItem="WSQ-kO-XrH" firstAttribute="leading" secondItem="tPo-Pf-jkY" secondAttribute="leading" constant="20" id="4p4-xZ-LdV"/>
                                     <constraint firstAttribute="trailing" secondItem="33z-U6-W2s" secondAttribute="trailing" constant="20" id="5eJ-u3-llQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="cs1-aj-pck" secondAttribute="trailing" constant="20" id="9Bv-fG-rjr"/>
                                     <constraint firstItem="33z-U6-W2s" firstAttribute="leading" secondItem="tPo-Pf-jkY" secondAttribute="leading" constant="20" id="ANR-bf-LSQ"/>
+                                    <constraint firstItem="6Eg-dr-YIo" firstAttribute="top" secondItem="cs1-aj-pck" secondAttribute="bottom" constant="10" id="CMc-vb-hW9"/>
                                     <constraint firstItem="WSQ-kO-XrH" firstAttribute="top" secondItem="zre-JC-HPq" secondAttribute="bottom" constant="10" id="DuY-jM-dbh"/>
                                     <constraint firstItem="9A1-TT-peD" firstAttribute="top" secondItem="WSQ-kO-XrH" secondAttribute="bottom" constant="10" id="HtJ-mZ-v0g"/>
+                                    <constraint firstAttribute="trailing" secondItem="ae5-7q-S74" secondAttribute="trailing" constant="20" id="IaU-Kw-GMq"/>
+                                    <constraint firstItem="dRq-bI-xC5" firstAttribute="leading" secondItem="tPo-Pf-jkY" secondAttribute="leading" constant="20" id="Lzl-5D-dQa"/>
+                                    <constraint firstItem="ae5-7q-S74" firstAttribute="top" secondItem="6Eg-dr-YIo" secondAttribute="bottom" constant="10" id="NXm-Dt-8tR"/>
+                                    <constraint firstItem="9A1-TT-peD" firstAttribute="top" secondItem="WSQ-kO-XrH" secondAttribute="bottom" constant="10" id="PqD-t3-6SN"/>
                                     <constraint firstItem="zre-JC-HPq" firstAttribute="leading" secondItem="tPo-Pf-jkY" secondAttribute="leading" constant="20" id="S9T-Jc-Ibb"/>
+                                    <constraint firstItem="dRq-bI-xC5" firstAttribute="top" secondItem="ae5-7q-S74" secondAttribute="bottom" constant="20" id="Ssy-YU-SMl"/>
+                                    <constraint firstItem="cs1-aj-pck" firstAttribute="top" secondItem="33z-U6-W2s" secondAttribute="bottom" constant="10" id="UnU-Ax-giF"/>
                                     <constraint firstAttribute="trailing" secondItem="zre-JC-HPq" secondAttribute="trailing" constant="20" id="UoJ-yA-HKG"/>
+                                    <constraint firstItem="cs1-aj-pck" firstAttribute="leading" secondItem="tPo-Pf-jkY" secondAttribute="leading" constant="20" id="Wz9-xS-2Mh"/>
                                     <constraint firstItem="33z-U6-W2s" firstAttribute="top" secondItem="9A1-TT-peD" secondAttribute="bottom" constant="10" id="Y5A-BJ-sfG"/>
                                     <constraint firstAttribute="trailing" secondItem="WSQ-kO-XrH" secondAttribute="trailing" constant="20" id="YQI-hE-rS6"/>
+                                    <constraint firstItem="ae5-7q-S74" firstAttribute="leading" secondItem="tPo-Pf-jkY" secondAttribute="leading" constant="20" id="aOc-5P-r9m"/>
+                                    <constraint firstAttribute="trailing" secondItem="dRq-bI-xC5" secondAttribute="trailing" constant="20" id="gop-mo-Uij"/>
                                     <constraint firstItem="9A1-TT-peD" firstAttribute="centerX" secondItem="tPo-Pf-jkY" secondAttribute="centerX" id="li9-LA-xFf"/>
                                     <constraint firstItem="6Eg-dr-YIo" firstAttribute="leading" secondItem="tPo-Pf-jkY" secondAttribute="leading" constant="20" id="oDu-an-g2J"/>
                                     <constraint firstItem="9A1-TT-peD" firstAttribute="top" secondItem="WSQ-kO-XrH" secondAttribute="bottom" constant="10" id="pmS-xh-rlV"/>
                                     <constraint firstAttribute="trailing" secondItem="6Eg-dr-YIo" secondAttribute="trailing" constant="20" id="wyf-Vg-Rk3"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqZ-z0-dkc">
+                                <rect key="frame" x="20" y="597" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.1960784314" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="a3Y-Yi-Uyb" kind="push" id="tER-gt-24o"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tPo-Pf-jkY" firstAttribute="centerX" secondItem="RBg-Wt-GFf" secondAttribute="centerX" id="C6m-5Z-PoR"/>
+                            <constraint firstItem="dqZ-z0-dkc" firstAttribute="trailing" secondItem="tPo-Pf-jkY" secondAttribute="trailing" constant="-20" id="IVQ-aX-euK"/>
                             <constraint firstAttribute="bottom" secondItem="tPo-Pf-jkY" secondAttribute="bottom" id="LnF-gd-r6n"/>
+                            <constraint firstItem="dqZ-z0-dkc" firstAttribute="leading" secondItem="tPo-Pf-jkY" secondAttribute="leading" constant="20" id="Poe-Z5-G7w"/>
                             <constraint firstAttribute="trailing" secondItem="tPo-Pf-jkY" secondAttribute="trailing" id="Tpq-KS-qq8"/>
+                            <constraint firstItem="dqZ-z0-dkc" firstAttribute="bottom" secondItem="tPo-Pf-jkY" secondAttribute="bottom" constant="-40" id="fDn-31-kez"/>
                             <constraint firstItem="tPo-Pf-jkY" firstAttribute="top" secondItem="tdL-3i-re8" secondAttribute="top" constant="10" id="htZ-4x-owA"/>
                             <constraint firstItem="tPo-Pf-jkY" firstAttribute="leading" secondItem="RBg-Wt-GFf" secondAttribute="leading" id="ufq-kX-TYD"/>
                         </constraints>
@@ -378,6 +422,32 @@ notice of privacy policy.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O6O-Tm-EuE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2224.8000000000002" y="357.57121439280365"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="apO-TM-wu6">
+            <objects>
+                <viewController id="9jb-cg-32o" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oz1-XP-weW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oak-cJ-PUa">
+                                <rect key="frame" x="20" y="34" width="335" height="57.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Notice of Privacy
+Practices</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="P2F-Qs-3eP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BfP-8Q-tfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3134" y="358"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KbQ-x7-H2s">
@@ -459,4 +529,7 @@ notice of privacy policy.</string>
     <resources>
         <image name="scan qr code" width="32" height="31"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tER-gt-24o"/>
+    </inferredMetricsTieBreakers>
 </document>
