@@ -12,6 +12,10 @@
 		EC0871C921AD1142001563AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0871C821AD1142001563AF /* Assets.xcassets */; };
 		EC0871CC21AD1142001563AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0871CA21AD1142001563AF /* LaunchScreen.storyboard */; };
 		EC0BA14821AE37FF00CF6D9D /* LearnMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0BA14721AE37FF00CF6D9D /* LearnMoreViewController.swift */; };
+		EC0BA14A21AE7C5C00CF6D9D /* AsunBasicAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0BA14921AE7C5C00CF6D9D /* AsunBasicAttributes.swift */; };
+		EC0BA14C21AE7C9000CF6D9D /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0BA14B21AE7C9000CF6D9D /* CodeView.swift */; };
+		EC0BA14E21AE7D3900CF6D9D /* eConsentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0BA14D21AE7D3900CF6D9D /* eConsentViewController.swift */; };
+		EC0BA15021AE95B400CF6D9D /* ClinicalStudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0BA14F21AE95B400CF6D9D /* ClinicalStudentsViewController.swift */; };
 		ECFFA26221AD1B6700858740 /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFFA26121AD1B6700858740 /* QRScannerController.swift */; };
 		ECFFA26421AD212500858740 /* ScanResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFFA26321AD212500858740 /* ScanResultViewController.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +28,10 @@
 		EC0871CB21AD1142001563AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC0871CD21AD1142001563AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC0BA14721AE37FF00CF6D9D /* LearnMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMoreViewController.swift; sourceTree = "<group>"; };
+		EC0BA14921AE7C5C00CF6D9D /* AsunBasicAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsunBasicAttributes.swift; sourceTree = "<group>"; };
+		EC0BA14B21AE7C9000CF6D9D /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		EC0BA14D21AE7D3900CF6D9D /* eConsentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eConsentViewController.swift; sourceTree = "<group>"; };
+		EC0BA14F21AE95B400CF6D9D /* ClinicalStudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalStudentsViewController.swift; sourceTree = "<group>"; };
 		ECFFA26121AD1B6700858740 /* QRScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
 		ECFFA26321AD212500858740 /* ScanResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +73,10 @@
 				EC0871CD21AD1142001563AF /* Info.plist */,
 				ECFFA26321AD212500858740 /* ScanResultViewController.swift */,
 				EC0BA14721AE37FF00CF6D9D /* LearnMoreViewController.swift */,
+				EC0BA14921AE7C5C00CF6D9D /* AsunBasicAttributes.swift */,
+				EC0BA14B21AE7C9000CF6D9D /* CodeView.swift */,
+				EC0BA14D21AE7D3900CF6D9D /* eConsentViewController.swift */,
+				EC0BA14F21AE95B400CF6D9D /* ClinicalStudentsViewController.swift */,
 			);
 			path = QRcodePractice_3;
 			sourceTree = "<group>";
@@ -157,10 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0BA14E21AE7D3900CF6D9D /* eConsentViewController.swift in Sources */,
+				EC0BA14A21AE7C5C00CF6D9D /* AsunBasicAttributes.swift in Sources */,
 				EC0BA14821AE37FF00CF6D9D /* LearnMoreViewController.swift in Sources */,
 				ECFFA26421AD212500858740 /* ScanResultViewController.swift in Sources */,
+				EC0BA14C21AE7C9000CF6D9D /* CodeView.swift in Sources */,
 				EC0871C221AD1141001563AF /* AppDelegate.swift in Sources */,
 				ECFFA26221AD1B6700858740 /* QRScannerController.swift in Sources */,
+				EC0BA15021AE95B400CF6D9D /* ClinicalStudentsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -41,6 +41,8 @@ class ScanResultViewController: UIViewController {
         contactview.frame = CGRect(x: 0 + width_screen * 2, y: 0, width: width_screen, height: scrollerview.frame.size.height)
         
         
+        
+        
     }
 
 }
