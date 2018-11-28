@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDU-gp-rG6">
-                                <rect key="frame" x="0.0" y="30" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="74" width="375" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan QR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mL3-0M-SBL">
                                         <rect key="frame" x="149.5" y="60" width="76" height="24"/>
@@ -88,7 +88,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3O-WQ-Wad">
-                                <rect key="frame" x="0.0" y="30" width="375" height="49"/>
+                                <rect key="frame" x="0.0" y="74" width="375" height="49"/>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <tabBarItem title="Description" id="WtC-Ib-vzC">
@@ -106,7 +106,7 @@
                                 <color key="selectedImageTintColor" red="0.93333333330000001" green="0.2274509804" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tabBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJH-z7-bCG">
-                                <rect key="frame" x="0.0" y="84" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="128" width="375" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last updated on " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOd-bK-Lp3">
                                         <rect key="frame" x="20" y="10" width="116" height="18"/>
@@ -144,7 +144,7 @@ thyroid disorders</string>
                                     <constraint firstItem="IOd-bK-Lp3" firstAttribute="leading" secondItem="yJH-z7-bCG" secondAttribute="leading" constant="20" id="vdQ-0r-0P6"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o20-4A-Ivp">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="251" ambiguous="YES" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="434" translatesAutoresizingMaskIntoConstraints="NO" id="o20-4A-Ivp">
                                 <rect key="frame" x="0.0" y="233" width="375" height="434"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y1b-R8-0uW">
@@ -289,7 +289,7 @@ Sites near you</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPo-Pf-jkY">
-                                <rect key="frame" x="0.0" y="30" width="375" height="637"/>
+                                <rect key="frame" x="0.0" y="74" width="375" height="593"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zre-JC-HPq">
                                         <rect key="frame" x="20" y="10" width="335" height="57.5"/>
@@ -423,31 +423,113 @@ notice of privacy policy.</string>
             </objects>
             <point key="canvasLocation" x="2224.8000000000002" y="357.57121439280365"/>
         </scene>
-        <!--View Controller-->
+        <!--Learn More View Controller-->
         <scene sceneID="apO-TM-wu6">
             <objects>
-                <viewController id="9jb-cg-32o" sceneMemberID="viewController">
+                <viewController id="9jb-cg-32o" customClass="LearnMoreViewController" customModule="QRcodePractice_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oz1-XP-weW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oak-cJ-PUa">
-                                <rect key="frame" x="20" y="34" width="335" height="57.5"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q10-Ns-XWt">
+                                <rect key="frame" x="0.0" y="10" width="375" height="657"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Notice of Privacy
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="647" translatesAutoresizingMaskIntoConstraints="NO" id="UYg-ks-VLC">
+                                        <rect key="frame" x="0.0" y="5" width="375" height="647"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fm9-Pp-bcR">
+                                                <rect key="frame" x="20" y="10" width="335" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="A8c-GJ-7go"/>
+                                                </constraints>
+                                                <string key="text">Notice of Privacy
 Practices</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last updated on " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tyd-kx-nxG">
+                                                <rect key="frame" x="20" y="80" width="116" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="qed-ad-22p"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.44313725490196076" green="0.44313725490196076" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="November 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fq7-CY-bXr">
+                                                <rect key="frame" x="136" y="80" width="109" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.44313725490196076" green="0.44313725490196076" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruX-H4-V9S">
+                                                <rect key="frame" x="20" y="118" width="335" height="60"/>
+                                                <string key="text">Food recommendtion for 
+thyroid disorders</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" red="0.92549019607843142" green="0.1764705882352941" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4Q-3R-y6P">
+                                                <rect key="frame" x="20" y="198" width="335" height="1"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="dRX-sY-0qR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="T6x-Rg-YL3">
+                                                <rect key="frame" x="20" y="224" width="335" height="211"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ott-jx-37e">
+                                                <rect key="frame" x="20" y="501" width="335" height="211"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ruX-H4-V9S" firstAttribute="leading" secondItem="UYg-ks-VLC" secondAttribute="leading" constant="20" id="2FB-C8-Ybi"/>
+                                            <constraint firstItem="R4Q-3R-y6P" firstAttribute="leading" secondItem="UYg-ks-VLC" secondAttribute="leading" constant="20" id="68x-9o-Cam"/>
+                                            <constraint firstItem="fq7-CY-bXr" firstAttribute="leading" secondItem="Tyd-kx-nxG" secondAttribute="trailing" id="84u-nL-mnW"/>
+                                            <constraint firstItem="ruX-H4-V9S" firstAttribute="top" secondItem="Tyd-kx-nxG" secondAttribute="bottom" constant="20" id="BLb-w5-kR5"/>
+                                            <constraint firstItem="Tyd-kx-nxG" firstAttribute="leading" secondItem="UYg-ks-VLC" secondAttribute="leading" constant="20" id="MGw-j0-7XD"/>
+                                            <constraint firstItem="fq7-CY-bXr" firstAttribute="top" secondItem="fm9-Pp-bcR" secondAttribute="bottom" constant="10" id="QFh-zw-neH"/>
+                                            <constraint firstItem="R4Q-3R-y6P" firstAttribute="top" secondItem="ruX-H4-V9S" secondAttribute="bottom" constant="20" id="TOz-6K-OxE"/>
+                                            <constraint firstAttribute="trailing" secondItem="ruX-H4-V9S" secondAttribute="trailing" constant="20" id="a12-U0-4kd"/>
+                                            <constraint firstItem="Tyd-kx-nxG" firstAttribute="top" secondItem="fm9-Pp-bcR" secondAttribute="bottom" constant="10" id="d1v-Uu-Y9o"/>
+                                            <constraint firstItem="fm9-Pp-bcR" firstAttribute="leading" secondItem="UYg-ks-VLC" secondAttribute="leading" constant="20" id="mTg-xf-mEM"/>
+                                            <constraint firstItem="fm9-Pp-bcR" firstAttribute="trailing" secondItem="UYg-ks-VLC" secondAttribute="trailing" constant="-20" id="sCO-Lc-hLg"/>
+                                            <constraint firstItem="fm9-Pp-bcR" firstAttribute="top" secondItem="UYg-ks-VLC" secondAttribute="top" constant="10" id="sKt-Y6-w0P"/>
+                                            <constraint firstAttribute="trailing" secondItem="R4Q-3R-y6P" secondAttribute="trailing" constant="20" id="v1z-uY-B2b"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="P2F-Qs-3eP"/>
                     </view>
+                    <connections>
+                        <outlet property="content_view" destination="UYg-ks-VLC" id="0xi-ha-Sef"/>
+                        <outlet property="contentscrollview" destination="Q10-Ns-XWt" id="Q3A-8K-UlU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BfP-8Q-tfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3134" y="358"/>
+            <point key="canvasLocation" x="3133.5999999999999" y="357.57121439280365"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KbQ-x7-H2s">
@@ -530,6 +612,6 @@ Practices</string>
         <image name="scan qr code" width="32" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tER-gt-24o"/>
+        <segue reference="pZY-mX-xKa"/>
     </inferredMetricsTieBreakers>
 </document>
