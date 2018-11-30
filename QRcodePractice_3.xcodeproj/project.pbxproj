@@ -17,6 +17,8 @@
 		EC0BA14E21AE7D3900CF6D9D /* eConsentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0BA14D21AE7D3900CF6D9D /* eConsentViewController.swift */; };
 		EC0BA15021AE95B400CF6D9D /* ClinicalStudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0BA14F21AE95B400CF6D9D /* ClinicalStudentsViewController.swift */; };
 		EC0C2F9421AF829000D71C06 /* CumstomItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C2F9321AF829000D71C06 /* CumstomItemCell.swift */; };
+		EC0C2F9921B0DF1C00D71C06 /* FoodRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C2F9821B0DF1C00D71C06 /* FoodRecommendationViewController.swift */; };
+		EC0C2F9D21B0EC4700D71C06 /* ZMProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0C2F9B21B0EC4700D71C06 /* ZMProgressView.m */; };
 		ECFFA26221AD1B6700858740 /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFFA26121AD1B6700858740 /* QRScannerController.swift */; };
 		ECFFA26421AD212500858740 /* ScanResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFFA26321AD212500858740 /* ScanResultViewController.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,10 @@
 		EC0BA14D21AE7D3900CF6D9D /* eConsentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eConsentViewController.swift; sourceTree = "<group>"; };
 		EC0BA14F21AE95B400CF6D9D /* ClinicalStudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalStudentsViewController.swift; sourceTree = "<group>"; };
 		EC0C2F9321AF829000D71C06 /* CumstomItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CumstomItemCell.swift; sourceTree = "<group>"; };
+		EC0C2F9821B0DF1C00D71C06 /* FoodRecommendationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRecommendationViewController.swift; sourceTree = "<group>"; };
+		EC0C2F9A21B0EC4600D71C06 /* QRcodePractice_3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QRcodePractice_3-Bridging-Header.h"; sourceTree = "<group>"; };
+		EC0C2F9B21B0EC4700D71C06 /* ZMProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMProgressView.m; sourceTree = "<group>"; };
+		EC0C2F9C21B0EC4700D71C06 /* ZMProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMProgressView.h; sourceTree = "<group>"; };
 		ECFFA26121AD1B6700858740 /* QRScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
 		ECFFA26321AD212500858740 /* ScanResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,6 +58,7 @@
 		EC0871B521AD1141001563AF = {
 			isa = PBXGroup;
 			children = (
+				EC0C2F9721B0D17A00D71C06 /* View */,
 				ECFFA25E21AD1A4300858740 /* Model */,
 				EC0871D421AD1190001563AF /* Supporting File */,
 				EC0871C021AD1141001563AF /* QRcodePractice_3 */,
@@ -71,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				EC0871C521AD1141001563AF /* Main.storyboard */,
-				ECFFA26121AD1B6700858740 /* QRScannerController.swift */,
 				EC0871CD21AD1142001563AF /* Info.plist */,
 				ECFFA26321AD212500858740 /* ScanResultViewController.swift */,
 				EC0BA14721AE37FF00CF6D9D /* LearnMoreViewController.swift */,
@@ -79,7 +85,7 @@
 				EC0BA14B21AE7C9000CF6D9D /* CodeView.swift */,
 				EC0BA14D21AE7D3900CF6D9D /* eConsentViewController.swift */,
 				EC0BA14F21AE95B400CF6D9D /* ClinicalStudentsViewController.swift */,
-				EC0C2F9321AF829000D71C06 /* CumstomItemCell.swift */,
+				EC0C2F9821B0DF1C00D71C06 /* FoodRecommendationViewController.swift */,
 			);
 			path = QRcodePractice_3;
 			sourceTree = "<group>";
@@ -94,9 +100,21 @@
 			path = "Supporting File";
 			sourceTree = "<group>";
 		};
+		EC0C2F9721B0D17A00D71C06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC0C2F9A21B0EC4600D71C06 /* QRcodePractice_3-Bridging-Header.h */,
+				EC0C2F9321AF829000D71C06 /* CumstomItemCell.swift */,
+				EC0C2F9C21B0EC4700D71C06 /* ZMProgressView.h */,
+				EC0C2F9B21B0EC4700D71C06 /* ZMProgressView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		ECFFA25E21AD1A4300858740 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ECFFA26121AD1B6700858740 /* QRScannerController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,6 +151,7 @@
 				TargetAttributes = {
 					EC0871BD21AD1141001563AF = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -176,7 +195,9 @@
 				EC0BA14A21AE7C5C00CF6D9D /* AsunBasicAttributes.swift in Sources */,
 				EC0BA14821AE37FF00CF6D9D /* LearnMoreViewController.swift in Sources */,
 				ECFFA26421AD212500858740 /* ScanResultViewController.swift in Sources */,
+				EC0C2F9D21B0EC4700D71C06 /* ZMProgressView.m in Sources */,
 				EC0BA14C21AE7C9000CF6D9D /* CodeView.swift in Sources */,
+				EC0C2F9921B0DF1C00D71C06 /* FoodRecommendationViewController.swift in Sources */,
 				EC0871C221AD1141001563AF /* AppDelegate.swift in Sources */,
 				ECFFA26221AD1B6700858740 /* QRScannerController.swift in Sources */,
 				EC0C2F9421AF829000D71C06 /* CumstomItemCell.swift in Sources */,
@@ -326,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = QRcodePractice_3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,6 +356,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "macong.QRcodePractice-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "View/QRcodePractice_3-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -343,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = QRcodePractice_3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -351,6 +376,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "macong.QRcodePractice-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "View/QRcodePractice_3-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

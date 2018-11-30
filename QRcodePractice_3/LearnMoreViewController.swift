@@ -25,7 +25,7 @@ class LearnMoreViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         //have problem in the height
        
-        content_view.frame.size.height = view.frame.size.height * 2
+       // content_view.frame.size.height = view.frame.size.height * 2
 
 //        contentscrollview.contentSize = content_view.frame.size
 //         print("contetnHeight:\(contentscrollview.contentSize.height)")

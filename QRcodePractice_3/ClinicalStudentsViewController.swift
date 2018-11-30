@@ -77,7 +77,22 @@ extension ClinicalStudentsViewController:UITableViewDelegate,UITableViewDataSour
         return 120
     }
     
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("被选中的是：\(indexPath)")
+        //let foodrecommendationVC = FoodRecommendationViewController()
         
+        //navigationController?.pushViewController(foodrecommendationVC, animated: true)
+        
+        let foodrecommendationVC = self.storyboard?.instantiateViewController(withIdentifier: String(describing: type(of: FoodRecommendationViewController())))
+            as! FoodRecommendationViewController
+        self.navigationController?.pushViewController(foodrecommendationVC, animated: true)
+        
+        //在此处可以传一些值吧但是目前不会
+        
+        
+        
+    }
         
         
         
