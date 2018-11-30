@@ -18,6 +18,7 @@ class eConsentViewController: UIViewController {
         super.viewDidLoad()
         //此处有问题，距离写死了，不能自适应
         let code = CodeView(frame: CGRect(x: 20, y: 520, width: self.view.frame.size.width - 20*2, height: 30))
+        //code.becomeFirstResponder()
         code.callBacktext = { str in
             if str == "123456789" {
                 print("right!!!")

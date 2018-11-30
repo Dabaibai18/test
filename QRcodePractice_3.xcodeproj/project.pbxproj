@@ -81,8 +81,6 @@
 				EC0871CD21AD1142001563AF /* Info.plist */,
 				ECFFA26321AD212500858740 /* ScanResultViewController.swift */,
 				EC0BA14721AE37FF00CF6D9D /* LearnMoreViewController.swift */,
-				EC0BA14921AE7C5C00CF6D9D /* AsunBasicAttributes.swift */,
-				EC0BA14B21AE7C9000CF6D9D /* CodeView.swift */,
 				EC0BA14D21AE7D3900CF6D9D /* eConsentViewController.swift */,
 				EC0BA14F21AE95B400CF6D9D /* ClinicalStudentsViewController.swift */,
 				EC0C2F9821B0DF1C00D71C06 /* FoodRecommendationViewController.swift */,
@@ -103,6 +101,8 @@
 		EC0C2F9721B0D17A00D71C06 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EC0BA14B21AE7C9000CF6D9D /* CodeView.swift */,
+				EC0BA14921AE7C5C00CF6D9D /* AsunBasicAttributes.swift */,
 				EC0C2F9A21B0EC4600D71C06 /* QRcodePractice_3-Bridging-Header.h */,
 				EC0C2F9321AF829000D71C06 /* CumstomItemCell.swift */,
 				EC0C2F9C21B0EC4700D71C06 /* ZMProgressView.h */,

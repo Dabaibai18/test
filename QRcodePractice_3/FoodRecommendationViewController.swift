@@ -14,6 +14,7 @@ class FoodRecommendationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.prograssview.backgroundColor = UIColor.white
+        //设置的是圆形进度条
         let progressView = ZMProgressView()
         progressView.lineColor = UIColor.init(displayP3Red: 246 / 255 , green: 16 / 255, blue: 51 / 255, alpha: 1)
         progressView.loopColor = UIColor.init(displayP3Red: 225 / 255 , green: 225 / 255, blue: 225 / 255, alpha: 1)

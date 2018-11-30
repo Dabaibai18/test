@@ -59,9 +59,8 @@ extension CodeView {
         textFiled = Base.textFiled
         textFiled.becomeFirstResponder()
         textFiled.autocapitalizationType = .none
-        textFiled.keyboardType = .numberPad
-        //我后加的
-        //textFiled.borderStyle = .line
+        textFiled.keyboardType = .default
+        
         
         
         
@@ -192,7 +191,9 @@ extension CodeView {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.textFiled.becomeFirstResponder()
+        
     }
+    
 }
 
 //MARK: Animation
