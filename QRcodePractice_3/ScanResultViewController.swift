@@ -21,11 +21,14 @@ class ScanResultViewController: UIViewController {
     @IBOutlet weak var contactview: UIView!
     
     
+    static var name:String = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         cum_tabbar.delegate = self
         scrollerview.delegate = self
-        
+        ScanResultViewController.name = namelabel.text!
     }
     override func viewWillAppear(_ animated: Bool) {
         let width_screen = UIScreen.main.bounds.width
@@ -44,6 +47,16 @@ class ScanResultViewController: UIViewController {
         
         
     }
+    
+   
+    
+    @IBAction func JoinStudy(_ sender: UIButton) {
+       
+      
+        
+    }
+    
+    
 
 }
 extension ScanResultViewController:UIScrollViewDelegate{

@@ -11,23 +11,79 @@ import UIKit
 class ClinicalStudentsViewController: UIViewController {
 
     @IBOutlet weak var titemableview: UITableView!
+   
+    var names :[String] = []
+    let identifier = "cell"
+    static var isfirstload = true
+   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titemableview.isHidden = true
-
-        // Do any additional setup after loading the view.
+        titemableview.isHidden = false
+        titemableview.delegate = self
+        titemableview.dataSource = self
+        
+        
+        titemableview.register(CumstomItemCell.self, forCellReuseIdentifier: identifier)
+        titemableview.backgroundColor = UIColor.white
+        print("viewDidLoad")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+       // titemableview.separatorStyle = .none
+        if ClinicalStudentsViewController.isfirstload {
+            print(ClinicalStudentsViewController.isfirstload)
+            ClinicalStudentsViewController.isfirstload = false
+            print(ClinicalStudentsViewController.isfirstload)
+        }else{
+            names.append(ScanResultViewController.name)
+            print("names:\(names.count)")
+            titemableview.reloadData()
+        }
+       
+        
     }
     
 
-    /*
-    // MARK: - Navigation
+}
+extension ClinicalStudentsViewController:UITableViewDelegate,UITableViewDataSource {
+    
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return names.count
     }
-    */
-
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell : CumstomItemCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CumstomItemCell
+        //cell = CumstomItemCell.init(style: .default, reuseIdentifier: "cell")
+        cell.imageview.image = UIImage(named: "pain")
+        cell.namelabel.text = ScanResultViewController.name //这里存在问题应该以传值的方式 不应该用静态的变量存值
+        
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
+    
+        
+        
+        
+        
+        
+       
+    
+    
+    
 }

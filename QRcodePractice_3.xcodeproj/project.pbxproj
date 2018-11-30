@@ -16,6 +16,7 @@
 		EC0BA14C21AE7C9000CF6D9D /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0BA14B21AE7C9000CF6D9D /* CodeView.swift */; };
 		EC0BA14E21AE7D3900CF6D9D /* eConsentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0BA14D21AE7D3900CF6D9D /* eConsentViewController.swift */; };
 		EC0BA15021AE95B400CF6D9D /* ClinicalStudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0BA14F21AE95B400CF6D9D /* ClinicalStudentsViewController.swift */; };
+		EC0C2F9421AF829000D71C06 /* CumstomItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C2F9321AF829000D71C06 /* CumstomItemCell.swift */; };
 		ECFFA26221AD1B6700858740 /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFFA26121AD1B6700858740 /* QRScannerController.swift */; };
 		ECFFA26421AD212500858740 /* ScanResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFFA26321AD212500858740 /* ScanResultViewController.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		EC0BA14B21AE7C9000CF6D9D /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		EC0BA14D21AE7D3900CF6D9D /* eConsentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eConsentViewController.swift; sourceTree = "<group>"; };
 		EC0BA14F21AE95B400CF6D9D /* ClinicalStudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalStudentsViewController.swift; sourceTree = "<group>"; };
+		EC0C2F9321AF829000D71C06 /* CumstomItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CumstomItemCell.swift; sourceTree = "<group>"; };
 		ECFFA26121AD1B6700858740 /* QRScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
 		ECFFA26321AD212500858740 /* ScanResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +79,7 @@
 				EC0BA14B21AE7C9000CF6D9D /* CodeView.swift */,
 				EC0BA14D21AE7D3900CF6D9D /* eConsentViewController.swift */,
 				EC0BA14F21AE95B400CF6D9D /* ClinicalStudentsViewController.swift */,
+				EC0C2F9321AF829000D71C06 /* CumstomItemCell.swift */,
 			);
 			path = QRcodePractice_3;
 			sourceTree = "<group>";
@@ -84,9 +87,9 @@
 		EC0871D421AD1190001563AF /* Supporting File */ = {
 			isa = PBXGroup;
 			children = (
+				EC0871C821AD1142001563AF /* Assets.xcassets */,
 				EC0871C121AD1141001563AF /* AppDelegate.swift */,
 				EC0871CA21AD1142001563AF /* LaunchScreen.storyboard */,
-				EC0871C821AD1142001563AF /* Assets.xcassets */,
 			);
 			path = "Supporting File";
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				EC0BA14C21AE7C9000CF6D9D /* CodeView.swift in Sources */,
 				EC0871C221AD1141001563AF /* AppDelegate.swift in Sources */,
 				ECFFA26221AD1B6700858740 /* QRScannerController.swift in Sources */,
+				EC0C2F9421AF829000D71C06 /* CumstomItemCell.swift in Sources */,
 				EC0BA15021AE95B400CF6D9D /* ClinicalStudentsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

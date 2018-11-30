@@ -12,6 +12,8 @@ class eConsentViewController: UIViewController {
 
     @IBOutlet weak var next_btn: UIButton!
     
+    //var itemname = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //此处有问题，距离写死了，不能自适应
@@ -33,14 +35,16 @@ class eConsentViewController: UIViewController {
             
         }
         
-        
-       
-        
-        
         view.addSubview(code)
     }
     
 
     
-
+    @IBAction func addItemtoClinicalStudents(_ sender: UIButton) {
+        print("点了")
+       
+        
+        
+    }
+    
 }
