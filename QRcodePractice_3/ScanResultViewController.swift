@@ -14,6 +14,7 @@ class ScanResultViewController: UIViewController {
     @IBOutlet weak var timelabel: UILabel!
     @IBOutlet weak var namelabel: UILabel!
     
+    @IBOutlet weak var contentview: UIView!
     @IBOutlet weak var scrollerview: UIScrollView!
     
     @IBOutlet weak var descriptionview: UIView!
@@ -37,6 +38,8 @@ class ScanResultViewController: UIViewController {
         scrollerview.bounces = false
         scrollerview.showsHorizontalScrollIndicator = false
         scrollerview.isScrollEnabled = false
+        
+        contentview.frame = CGRect(x: 0, y: 0, width: width_screen * 3, height: scrollerview.frame.size.height)
         descriptionview.frame = CGRect(x: 0, y: 0, width: width_screen, height: scrollerview.frame.size.height)
 
         eligibilityview.frame = CGRect(x: 0 + width_screen, y: 0, width: width_screen, height: scrollerview.frame.size.height)
