@@ -11,6 +11,10 @@ import UIKit
 class FoodRecommendationViewController: UIViewController {
 
     @IBOutlet weak var prograssview: UIView!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.prograssview.backgroundColor = UIColor.white
@@ -26,9 +30,25 @@ class FoodRecommendationViewController: UIViewController {
         progressView.title = "\(progressView.percent)%"
         progressView.percentUnit = "Complete";
         self.prograssview.addSubview(progressView)
-
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        alert()
     }
     
+     func alert(){
+        // 创建
+        let alertController = UIAlertController(title: "", message: "Activity completion refer to when you started on the clinical studies.", preferredStyle:.alert)
+        let okAction = UIAlertAction(title: "Okay", style: .default) { (UIAlertAction) in
+            print("点击了好的")
+        }
+        
+        // 添加
+        
+        alertController.addAction(okAction)
+        
+        // 弹出
+        self.present(alertController, animated: true, completion: nil)
+    }
 
     
 
