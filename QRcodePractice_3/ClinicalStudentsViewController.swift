@@ -66,6 +66,7 @@ extension ClinicalStudentsViewController:UITableViewDelegate,UITableViewDataSour
         
         let cell : CumstomItemCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CumstomItemCell
         //cell = CumstomItemCell.init(style: .default, reuseIdentifier: "cell")
+        
         cell.imageview.image = UIImage(named: "pain")
         cell.namelabel.text = ScanResultViewController.name //这里存在问题应该以传值的方式 不应该用静态的变量存值
         

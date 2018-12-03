@@ -17,6 +17,7 @@ class CumstomItemCell: UITableViewCell{
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         imageview = UIImageView(frame: CGRect(x: 20, y: 40, width: 30, height: 39.5))
         imageview.image = UIImage.init()
+        //imageview.backgroundColor = UIColor.blue
         self.contentView.addSubview(self.imageview)
         
         
