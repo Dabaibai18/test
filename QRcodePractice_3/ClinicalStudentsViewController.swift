@@ -27,18 +27,18 @@ class ClinicalStudentsViewController: UIViewController {
         
         titemableview.register(CumstomItemCell.self, forCellReuseIdentifier: identifier)
         titemableview.backgroundColor = UIColor.white
-        print("viewDidLoad")
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
        // titemableview.separatorStyle = .none
         if ClinicalStudentsViewController.isfirstload {
-            print(ClinicalStudentsViewController.isfirstload)
+            
             ClinicalStudentsViewController.isfirstload = false
-            print(ClinicalStudentsViewController.isfirstload)
+            
         }else{
             names.append(ScanResultViewController.name)
-            print("names:\(names.count)")
+            
             titemableview.reloadData()
         }
        

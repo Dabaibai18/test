@@ -1185,6 +1185,7 @@ thyroid disorders</string>
         <image name="scan qr code" width="32" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Li7-RS-8PF"/>
         <segue reference="tER-gt-24o"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -35,7 +35,7 @@ class LearnMoreViewController: UIViewController {
         //我猜是因为label标签中的高度也是通过文字计算的高度，不是明确的高度，因此不能正确计算，如果没有其他更好的解决办法，我想到的办法是
         //将最笨的办法--将所有控件c拖进来手动设置，但是这个方法很不可取，因为每次都拖动，加入没有必要的关联
         
-        print("label4.frame.size.height:\(label4.frame.size.height)")
+       
         print("contentscrollview:\(contentscrollview.frame.size.height)")
         print("contentscrollview.contentSize:\(contentscrollview.contentSize.height)")
     }
