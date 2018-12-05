@@ -117,6 +117,7 @@ extension ScanResultViewController :UITabBarDelegate{
             
             
         default:
+            print("error")
             break
         }
     }
